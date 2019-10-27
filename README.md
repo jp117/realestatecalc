@@ -10,9 +10,10 @@
 ## Steps to get there
 
 -   ~~Basic flask app~~
--   Database (thinking MongoDB)
+-   ~~Database (thinking MongoDB)~~
 -   Users
-    -   Log in
+    -   ~~Registration Page~~
+    -   ~~Log in~~
     -   Deal history / profile page
 -   Deal Analysis Input form
 -   Analysis Page
@@ -20,3 +21,4 @@
 -   Edit Deal Analysis Inputs
 -   Backend Logic for analysis
 -   Downloadable PDF
+-   Make prettier with css
