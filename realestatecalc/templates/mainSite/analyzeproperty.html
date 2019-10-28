@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block foo %}
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.title.label }}{{ form.title }} <br />
+    {{ form.street.label }}{{ form.street }} <br />
+    {{ form.city.label }}{{ form.city }} <br />
+    {{ form.state.label }}{{ form.state }} <br />
+    {{ form.zip.label }}{{ form.zip }} <br />
+    {{ form.purchasePrice.label }}{{ form.purchasePrice }} <br />
+    {{ form.improvementCosts.label }}{{ form.improvementCosts }} <br />
+    {{ form.closingCosts.label }}{{ form.closingCosts }} <br />
+    {{ form.miscCosts.label }}{{ form.miscCosts }} <br />
+    {{ form.afterRepairValue.label }}{{ form.afterRepairValue }} <br />
+    {{ form.cashPurchase.label }}{{ form.cashPurchase }} <br />
+    {{ form.downPayment.label }}{{ form.downPayment }} <br />
+    {{ form.interestRate.label }}{{ form.interestRate }} <br />
+    {{ form.feesAndPoints.label }}{{ form.feesAndPoints }} <br />
+    {{ form.payFees.label }}{{ form.payFees }} <br />
+    {{ form.interestOnly.label }}{{ form.interestOnly }} <br />
+    {{ form.rent.label }}{{ form.rent }} <br />
+    {{ form.otherIncome.label }}{{ form.otherIncome }} <br />
+    {{ form.electricity.label }}{{ form.electricity }} <br />
+    {{ form.waterAndSewer.label }}{{ form.waterAndSewer }} <br />
+    {{ form.pmi.label }}{{ form.pmi }} <br />
+    {{ form.garbage.label }}{{ form.garbage }} <br />
+    {{ form.hoa.label }}{{ form.hoa }} <br />
+    {{ form.insurance.label }}{{ form.insurance }} <br />
+    {{ form.propertyTax.label }}{{ form.propertyTax }} <br />
+    {{ form.otherExpenses.label }}{{ form.otherExpenses }} <br />
+    {{ form.vacancy.label }}{{ form.vacancy }} <br />
+    {{ form.repairsAndMaint.label }}{{ form.repairsAndMaint }} <br />
+    {{ form.capex.label }}{{ form.capex }} <br />
+    {{ form.managementFees.label }}{{ form.managementFees }} <br />
+    {{ form.incomeGrowth.label }}{{ form.incomeGrowth }} <br />
+    {{ form.appreciation.label }}{{ form.appreciation }} <br />
+    {{ form.expenseGrowth.label }}{{ form.expenseGrowth }} <br />
+    {{ form.salesExpenses.label }}{{ form.salesExpenses }} <br />
+    {{ form.submit }}
+</form>
+
+{% endblock %}

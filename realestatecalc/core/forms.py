@@ -19,7 +19,7 @@ class RegistrationForm(FlaskForm):
     submit = SubmitField('Register')
 
 class RentalPropertyForm(FlaskForm):
-    Title = StringField('Report Title')
+    title = StringField('Report Title')
     street = StringField('Street address')
     city = StringField('City')
     state = StringField('State')
@@ -31,7 +31,7 @@ class RentalPropertyForm(FlaskForm):
     afterRepairValue = IntegerField('After Repair Value')
     cashPurchase = BooleanField('All Cash Purchase?')
     #Confirm how selectfield shows choices then finish choice list
-    downPayment = SelectField('Down Payment (Percentage of Purchase Price)', choices=[(.2, '20%')])
+    downPayment = SelectField('Down Payment (Percentage of Purchase Price)', choices=[(.2, '20%'), (.3, '30%')])
     interestRate = IntegerField('Interest Rate %')
     feesAndPoints = IntegerField('Other fees and points from lender')
     payFees = RadioField('How will you pay lender fees and points?', choices=['Wrap points/fees into loan', 'Pay fees/points out of pocket'])
@@ -54,6 +54,7 @@ class RentalPropertyForm(FlaskForm):
     appreciation = IntegerField('Property Value Appreciation %')
     expenseGrowth = IntegerField('Expense Growth %')
     salesExpenses = IntegerField('Sales Expense %')
+    submit = SubmitField('Analyze Property')
 
 
 
