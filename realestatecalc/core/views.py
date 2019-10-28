@@ -39,7 +39,7 @@ def login():
     return render_template('mainSite/login.html', form=form)
 
 
-@core.route('/analyzeprop')
+@core.route('/analyzeproperty')
 @login_required
 def analyze():
     return 'YES'
