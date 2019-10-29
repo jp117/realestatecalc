@@ -5,36 +5,40 @@
     {{ form.street.label }}{{ form.street }} <br />
     {{ form.city.label }}{{ form.city }} <br />
     {{ form.state.label }}{{ form.state }} <br />
-    {{ form.zip.label }}{{ form.zip }} <br />
-    {{ form.purchasePrice.label }}{{ form.purchasePrice }} <br />
-    {{ form.improvementCosts.label }}{{ form.improvementCosts }} <br />
-    {{ form.closingCosts.label }}{{ form.closingCosts }} <br />
-    {{ form.miscCosts.label }}{{ form.miscCosts }} <br />
-    {{ form.afterRepairValue.label }}{{ form.afterRepairValue }} <br />
+    {{ form.zip.label }}{{ form.zip (type='number')}} <br />
+    {{ form.purchasePrice.label }}{{ form.purchasePrice(type='number') }} <br />
+    {{ form.improvementCosts.label }}{{ form.improvementCosts (type='number')}}
+    <br />
+    {{ form.closingCosts.label }}{{ form.closingCosts (type='number')}} <br />
+    {{ form.miscCosts.label }}{{ form.miscCosts (type='number')}} <br />
+    {{ form.afterRepairValue.label }}{{ form.afterRepairValue (type='number')}}
+    <br />
     {{ form.cashPurchase.label }}{{ form.cashPurchase }} <br />
     {{ form.downPayment.label }}{{ form.downPayment }} <br />
-    {{ form.interestRate.label }}{{ form.interestRate }} <br />
-    {{ form.feesAndPoints.label }}{{ form.feesAndPoints }} <br />
+    {{ form.interestRate.label }}{{ form.interestRate (type='number')}} <br />
+    {{ form.feesAndPoints.label }}{{ form.feesAndPoints (type='number')}} <br />
     {{ form.payFees.label }}{{ form.payFees }} <br />
     {{ form.interestOnly.label }}{{ form.interestOnly }} <br />
-    {{ form.rent.label }}{{ form.rent }} <br />
-    {{ form.otherIncome.label }}{{ form.otherIncome }} <br />
-    {{ form.electricity.label }}{{ form.electricity }} <br />
-    {{ form.waterAndSewer.label }}{{ form.waterAndSewer }} <br />
-    {{ form.pmi.label }}{{ form.pmi }} <br />
-    {{ form.garbage.label }}{{ form.garbage }} <br />
-    {{ form.hoa.label }}{{ form.hoa }} <br />
-    {{ form.insurance.label }}{{ form.insurance }} <br />
-    {{ form.propertyTax.label }}{{ form.propertyTax }} <br />
-    {{ form.otherExpenses.label }}{{ form.otherExpenses }} <br />
-    {{ form.vacancy.label }}{{ form.vacancy }} <br />
-    {{ form.repairsAndMaint.label }}{{ form.repairsAndMaint }} <br />
-    {{ form.capex.label }}{{ form.capex }} <br />
-    {{ form.managementFees.label }}{{ form.managementFees }} <br />
-    {{ form.incomeGrowth.label }}{{ form.incomeGrowth }} <br />
-    {{ form.appreciation.label }}{{ form.appreciation }} <br />
-    {{ form.expenseGrowth.label }}{{ form.expenseGrowth }} <br />
-    {{ form.salesExpenses.label }}{{ form.salesExpenses }} <br />
+    {{ form.rent.label }}{{ form.rent (type='number')}} <br />
+    {{ form.otherIncome.label }}{{ form.otherIncome (type='number')}} <br />
+    {{ form.electricity.label }}{{ form.electricity (type='number')}} <br />
+    {{ form.waterAndSewer.label }}{{ form.waterAndSewer (type='number')}} <br />
+    {{ form.pmi.label }}{{ form.pmi (type='number')}} <br />
+    {{ form.garbage.label }}{{ form.garbage (type='number')}} <br />
+    {{ form.hoa.label }}{{ form.hoa (type='number')}} <br />
+    {{ form.insurance.label }}{{ form.insurance (type='number')}} <br />
+    {{ form.propertyTax.label }}{{ form.propertyTax (type='number')}} <br />
+    {{ form.otherExpenses.label }}{{ form.otherExpenses (type='number')}} <br />
+    {{ form.vacancy.label }}{{ form.vacancy (type='number')}} <br />
+    {{ form.repairsAndMaint.label }}{{ form.repairsAndMaint (type='number')}}
+    <br />
+    {{ form.capex.label }}{{ form.capex (type='number')}} <br />
+    {{ form.managementFees.label }}{{ form.managementFees (type='number')}}
+    <br />
+    {{ form.incomeGrowth.label }}{{ form.incomeGrowth (type='number')}} <br />
+    {{ form.appreciation.label }}{{ form.appreciation (type='number')}} <br />
+    {{ form.expenseGrowth.label }}{{ form.expenseGrowth (type='number')}} <br />
+    {{ form.salesExpenses.label }}{{ form.salesExpenses (type='number')}} <br />
     {{ form.submit }}
 </form>
 

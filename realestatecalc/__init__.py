@@ -14,5 +14,7 @@ db = client.realestatecalc
 login = LoginManager(app)
 
 from realestatecalc.core.views import core
+from realestatecalc.analyzeProperty.views import analyzeProp
 
 app.register_blueprint(core)
+app.register_blueprint(analyzeProp)

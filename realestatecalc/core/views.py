@@ -2,7 +2,7 @@ from flask import render_template, Blueprint, request, session, redirect, url_fo
 from flask_login import login_user, current_user, logout_user, login_required
 from datetime import datetime
 import bcrypt
-from realestatecalc.core.forms import LogInForm, RegistrationForm, RentalPropertyForm
+from realestatecalc.core.forms import LogInForm, RegistrationForm
 from realestatecalc import db
 from realestatecalc.core.models import User
 
@@ -37,13 +37,6 @@ def login():
                 return redirect(url_for(next))
         return render_template('mainSite/login.html', form=form, error=error)
     return render_template('mainSite/login.html', form=form)
-
-
-@core.route('/analyzeproperty')
-@login_required
-def analyze():
-    form = RentalPropertyForm()
-    return render_template('mainSite/analyzeproperty.html', form=form)
 
 @core.route('/register', methods=['POST', 'GET'])
 def register():
