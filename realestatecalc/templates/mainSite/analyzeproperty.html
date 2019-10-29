@@ -1,11 +1,12 @@
 {% extends 'base.html' %} {% block foo %}
 <form method="POST">
     {{ form.hidden_tag() }}
+    {{ form.csrf_token }}
     {{ form.title.label }}{{ form.title }} <br />
     {{ form.street.label }}{{ form.street }} <br />
     {{ form.city.label }}{{ form.city }} <br />
     {{ form.state.label }}{{ form.state }} <br />
-    {{ form.zip.label }}{{ form.zip (type='number')}} <br />
+    {{ form.zipcode.label }}{{ form.zipcode (type='number')}} <br />
     {{ form.purchasePrice.label }}{{ form.purchasePrice(type='number') }} <br />
     {{ form.improvementCosts.label }}{{ form.improvementCosts (type='number')}}
     <br />
@@ -18,7 +19,8 @@
     {{ form.interestRate.label }}{{ form.interestRate (type='number')}} <br />
     {{ form.feesAndPoints.label }}{{ form.feesAndPoints (type='number')}} <br />
     {{ form.payFees.label }}{{ form.payFees }} <br />
-    {{ form.interestOnly.label }}{{ form.interestOnly }} <br />
+    {{ form.interestOnly.label }}{{ form.interestOnly }}
+    <br />
     {{ form.rent.label }}{{ form.rent (type='number')}} <br />
     {{ form.otherIncome.label }}{{ form.otherIncome (type='number')}} <br />
     {{ form.electricity.label }}{{ form.electricity (type='number')}} <br />

@@ -15,7 +15,7 @@
     -   ~~Registration Page~~
     -   ~~Log in~~
     -   Deal history / profile page
--   Deal Analysis Input form
+-   ~~Deal Analysis Input form~~
 -   Analysis Page
     -   Data visualization
 -   Edit Deal Analysis Inputs
