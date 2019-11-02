@@ -64,11 +64,18 @@ def analyzedReport(analyzepropertyform_id):
     address = "{0}, {1}, {2} {3}".format(prop['street'], prop['city'], prop['state'], prop['zipcode'])
     purchasePrice = prop['purchasePrice']
     grossRent = (prop['rent'] * 12 * (100 - Decimal(prop['vacancy'])) / 100) + prop['otherIncome'] * 12
+    monthlyRent = formatDollar(grossRent/12)
     managementFee = grossRent * Decimal(prop['managementFees']) / 100
     grossExpenses = ((prop['electricity'] + prop['waterAndSewer'] + prop['pmi'] + 
         prop['garbage'] + prop['hoa'] + prop['insurance'] + prop['otherExpenses']) * 12 + prop['propertyTax'] + managementFee)
+    monthlyExpenses = formatDollar(grossExpenses/12)
     if prop['payFees'] == 'oop':
         financeAmount = prop['purchasePrice'] * Decimal(prop['downPayment'])
     else:
         financeAmount = (prop['purchasePrice'] + prop['closingCosts']) * Decimal(prop['downPayment'])
-    return render_template('analysis/analysisPage.html', title=title, address=address.title())
+    return render_template('analysis/analysisPage.html', title=title, address=address.title(), 
+        purchasePrice=purchasePrice, monthlyRent=monthlyRent, monthlyExpenses=monthlyExpenses)
+
+
+def formatDollar(value):
+    return '$ {0:,.2f}'.format(value)
